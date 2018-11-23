@@ -67,7 +67,36 @@ executables:
     - servant-client
     - http-client
     - aeson
-
+  servant-sample-apitype:
+    main:                Main.hs
+    source-dirs:         apitype
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - aeson
+    - servant-server
+    - servant
+    - wai
+    - warp
+    - text
+    - bytestring
+    - attoparsec
+    - blaze-html
+    - blaze-markup
+    - directory
+    - time
+    - mtl
+    - string-conversions
+    - lucid
+    - http-media
+    - base-compat
+    - aeson-compat
+    - transformers
+    - time
+    - lucid
+ 
 
 tests:
   servant-sample-test:
