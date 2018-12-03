@@ -56,6 +56,7 @@ users1 =
 type API = "position" :> Capture "x" Int :> Capture "y" Int :> Get '[JSON] Position
       :<|> "hello" :> QueryParam "name" String :> Get '[JSON] HelloMessage
       :<|> "marketing" :> ReqBody '[JSON] ClientInfo :> Post '[JSON] Email
+
 data Position = Position
   { xCoord :: Int
   , yCoord :: Int

@@ -11,6 +11,9 @@ import Network.HTTP.Client (newManager, defaultManagerSettings)
 import Servant.API
 import Servant.Client
 
+
+
+{-- --}
 data Position = Position
   { xCoord :: Int
   , yCoord :: Int
